@@ -11,7 +11,7 @@ export function NewsletterSection() {
           Get exclusive insights on AI, tech trends, and financial markets delivered straight to your inbox.
         </p>
         <form
-          action="https://sirnesto.substack.com"
+          action="https://sirnestoo.substack.com/"
           method="get"
           target="_blank"
           className="flex flex-col items-center gap-4"
@@ -21,7 +21,7 @@ export function NewsletterSection() {
             size="lg"
             className="w-full sm:w-auto bg-primary text-primary-foreground hover:bg-primary/90"
           >
-            Subscribe to Newsletter
+            Subscribe to our Newsletter
           </Button>
         </form>
         <p className="text-sm text-muted-foreground mt-4">Join hundreds of professionals getting weekly insights</p>

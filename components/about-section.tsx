@@ -18,7 +18,7 @@ export function AboutSection() {
               className="rounded-2xl shadow-2xl"
             />
           </div>
-          <div>
+          <div className="text-center lg:text-start">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-blue-400">Our Lead Engineer</h2>
             <p className="text-foreground/80 mb-6">
               I'm Munachi Ernest-Eze, a Fractional CTO and AI Consultant with a track record of driving innovation at
@@ -64,7 +64,7 @@ export function AboutSection() {
                 </CardContent>
               </Card>
             </div>
-            <div className="flex gap-4">
+            <div className="flex gap-4 justify-center lg:justify-start">
               <a
                 href="https://www.linkedin.com/in/munachi-ernest-eze/"
                 target="_blank"

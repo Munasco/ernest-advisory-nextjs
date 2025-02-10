@@ -33,7 +33,7 @@ export function ServicesSection() {
     },
     {
       icon: <Lightbulb className="w-12 h-12" />,
-      title: "Technical Consulting",
+      title: "Technical Consulting or Fractional CTO",
       description: "Get expert advice on R&D and industry best practices to stay ahead of the curve.",
     },
   ]

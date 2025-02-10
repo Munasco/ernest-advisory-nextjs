@@ -6,12 +6,12 @@ import { TypeAnimation } from "react-type-animation"
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative md:min-h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 bg-background">
         <div className="absolute inset-0 bg-radial from-blue-500/20 via-purple-500/20 to-background"></div>
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-radial from-blue-500/30 via-purple-500/30 to-transparent rounded-full blur-3xl"></div>
       </div>
-      <div className="container px-4 mx-auto text-center relative z-10">
+      <div className="container px-4 mx-auto text-center relative py-8 md:py-2">
         <h1 className="text-4xl md:text-6xl font-bold tracking-tight mb-6 text-blue-400">
           Get Your SaaS Idea to Market in Weeks
         </h1>
