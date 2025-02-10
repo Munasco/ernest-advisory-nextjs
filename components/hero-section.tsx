@@ -1,7 +1,7 @@
 "use client"
 
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Rocket, Clock } from "lucide-react"
+import { ArrowRight } from "lucide-react"
 import { TypeAnimation } from "react-type-animation"
 
 export function HeroSection() {
