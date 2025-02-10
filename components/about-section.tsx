@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import { Card, CardContent } from "@/components/ui/card"
-import { Medal, FileText, GraduationCap, Linkedin, Twitter, Mail } from "lucide-react"
+import {Medal, FileText, Linkedin, Twitter, Mail, Brain} from "lucide-react"
 
 export function AboutSection() {
   return (
@@ -19,7 +19,7 @@ export function AboutSection() {
             />
           </div>
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-blue-400">About Me</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-blue-400">Our Lead Engineer</h2>
             <p className="text-foreground/80 mb-6">
               I'm Munachi Ernest-Eze, a Fractional CTO and AI Consultant with a track record of driving innovation at
               companies like DoorDash, LinkedIn, Microsoft, and Block. My expertise lies in scalable systems,
@@ -29,19 +29,19 @@ export function AboutSection() {
               <Card className="bg-card border-accent-foreground/20">
                 <CardContent className="p-4 flex items-center">
                   <Medal className="w-6 h-6 text-yellow-400 mr-2" />
-                  <span className="text-sm text-muted-foreground">IMO Medal</span>
+                  <span className="text-sm text-muted-foreground">Math Olympiad</span>
                 </CardContent>
               </Card>
               <Card className="bg-card border-accent-foreground/20">
                 <CardContent className="p-4 flex items-center">
                   <FileText className="w-6 h-6 text-blue-400 mr-2" />
-                  <span className="text-sm text-muted-foreground">Patent Holder</span>
+                  <span className="text-sm text-muted-foreground">Software Patents</span>
                 </CardContent>
               </Card>
               <Card className="bg-card border-accent-foreground/20">
                 <CardContent className="p-4 flex items-center">
-                  <GraduationCap className="w-6 h-6 text-red-400 mr-2" />
-                  <span className="text-sm text-muted-foreground">University of Toronto</span>
+                <Brain className="w-6 h-6 text-red-400 mr-2" />
+                  <span className="text-sm text-muted-foreground">Software Engineer @ LinkedIn</span>
                 </CardContent>
               </Card>
             </div>
@@ -74,7 +74,7 @@ export function AboutSection() {
                 <Linkedin className="w-6 h-6" />
               </a>
               <a
-                href="https://twitter.com/munachiernest"
+                href="https://twitter.com/munathelegend"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-foreground/80 hover:text-primary transition-colors"

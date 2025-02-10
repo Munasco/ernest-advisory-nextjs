@@ -64,7 +64,7 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
-"@eslint/js@9.20.0":
+"@eslint/js@9.20.0", "@eslint/js@^9.20.0":
   version "9.20.0"
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-9.20.0.tgz#7421bcbe74889fcd65d1be59f00130c289856eb4"
   integrity sha512-iZA07H9io9Wn836aVTytRaNqh00Sad+EamwOVJT12GTLw1VGMFV/4JaME+JjLtr9fiGaoWgYnS54wrfWsSs4oQ==
@@ -462,7 +462,7 @@
   dependencies:
     csstype "^3.0.2"
 
-"@typescript-eslint/eslint-plugin@^5.4.2 || ^6.0.0 || ^7.0.0 || ^8.0.0":
+"@typescript-eslint/eslint-plugin@8.23.0", "@typescript-eslint/eslint-plugin@^5.4.2 || ^6.0.0 || ^7.0.0 || ^8.0.0":
   version "8.23.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/eslint-plugin/-/eslint-plugin-8.23.0.tgz#7745f4e3e4a7ae5f6f73fefcd856fd6a074189b7"
   integrity sha512-vBz65tJgRrA1Q5gWlRfvoH+w943dq9K1p1yDBY2pc+a1nbBLZp7fB9+Hk8DaALUbzjqlMfgaqlVPT1REJdkt/w==
@@ -477,7 +477,7 @@
     natural-compare "^1.4.0"
     ts-api-utils "^2.0.1"
 
-"@typescript-eslint/parser@^5.4.2 || ^6.0.0 || ^7.0.0 || ^8.0.0":
+"@typescript-eslint/parser@8.23.0", "@typescript-eslint/parser@^5.4.2 || ^6.0.0 || ^7.0.0 || ^8.0.0":
   version "8.23.0"
   resolved "https://registry.yarnpkg.com/@typescript-eslint/parser/-/parser-8.23.0.tgz#57acb3b65fce48d12b70d119436e145842a30081"
   integrity sha512-h2lUByouOXFAlMec2mILeELUbME5SZRN/7R9Cw2RD2lRQQY08MWMM+PmVVKKJNK1aIwqTo9t/0CvOxwPbRIE2Q==
@@ -1455,6 +1455,11 @@ globals@^14.0.0:
   version "14.0.0"
   resolved "https://registry.yarnpkg.com/globals/-/globals-14.0.0.tgz#898d7413c29babcf6bafe56fcadded858ada724e"
   integrity sha512-oahGvuMGQlPw/ivIYBjVSrWAfWLBeku5tpPE2fOPLi+WHffIWbuh2tCjhyQhTBPMf5E9jDEH4FOmTYgYwbKwtQ==
+
+globals@^15.14.0:
+  version "15.14.0"
+  resolved "https://registry.yarnpkg.com/globals/-/globals-15.14.0.tgz#b8fd3a8941ff3b4d38f3319d433b61bbb482e73f"
+  integrity sha512-OkToC372DtlQeje9/zHIo5CT8lRP/FUgEOKBEhU4e0abL7J7CD24fD9ohiLN5hagG/kWCYj4K5oaxxtj2Z0Dig==
 
 globalthis@^1.0.4:
   version "1.0.4"
@@ -2647,6 +2652,15 @@ typed-array-length@^1.0.7:
     is-typed-array "^1.1.13"
     possible-typed-array-names "^1.0.0"
     reflect.getprototypeof "^1.0.6"
+
+typescript-eslint@^8.23.0:
+  version "8.23.0"
+  resolved "https://registry.yarnpkg.com/typescript-eslint/-/typescript-eslint-8.23.0.tgz#796deb48f040146b68fcc8cb07db68b87219a8d2"
+  integrity sha512-/LBRo3HrXr5LxmrdYSOCvoAMm7p2jNizNfbIpCgvG4HMsnoprRUOce/+8VJ9BDYWW68rqIENE/haVLWPeFZBVQ==
+  dependencies:
+    "@typescript-eslint/eslint-plugin" "8.23.0"
+    "@typescript-eslint/parser" "8.23.0"
+    "@typescript-eslint/utils" "8.23.0"
 
 typescript@^5:
   version "5.7.3"

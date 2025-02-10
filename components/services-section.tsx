@@ -12,36 +12,36 @@ export function ServicesSection() {
     },
     {
       icon: <Zap className="w-12 h-12" />,
-      title: "AI-Powered Development",
-      description: "Leverage cutting-edge AI to accelerate your development process and reduce time-to-market.",
+      title: "Expertise Across Platforms & Technologies",
+      description: "Leverage expertise in mobile, web, systems infra and app security, to build the right solution for your needs",
     },
     {
       icon: <BarChart className="w-12 h-12" />,
-      title: "Agile Project Management",
+      title: "Project Management Strategies",
       description: "Optimize your workflow with our proven agile methodologies for faster, more efficient development.",
     },
     {
       icon: <Clock className="w-12 h-12" />,
       title: "MVP in Weeks",
       description:
-        "Launch your Minimum Viable Product in weeks, allowing you to start gathering user feedback quickly.",
+        "Get a functional Minimum Viable Product within weeks to gather real user feedback.",
     },
     {
       icon: <Target className="w-12 h-12" />,
       title: "Scalable Architecture Design",
-      description: "Build a foundation that can grow with your business, from MVP to enterprise-level solutions.",
+      description: "Build a strong technical foundation that grows with your business.",
     },
     {
       icon: <Lightbulb className="w-12 h-12" />,
-      title: "Innovation Consulting",
-      description: "Get expert advice on emerging technologies and industry best practices to stay ahead of the curve.",
+      title: "Technical Consulting",
+      description: "Get expert advice on R&D and industry best practices to stay ahead of the curve.",
     },
   ]
 
   return (
-    <section className="py-4 bg-accent" id="services">
+    <section className="pt-4 pb-8 bg-accent" id="services">
       <div className="container px-4 mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold text-center my-4 text-blue-400">
+        <h2 className="text-3xl md:text-4xl font-bold text-center my-8 text-blue-400">
           What We Offer
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
