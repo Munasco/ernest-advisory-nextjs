@@ -19,11 +19,11 @@ export function HeroSection() {
           <TypeAnimation
             sequence={[
               "Leverage AI Agents",
-              2000,
+              3000,
               "Optimize your R&D processes",
-              2000,
+              3000,
                 "Receive Tailored Productivity Recommendations",
-                2000,
+                3000,
             ]}
             wrapper="span"
             speed={50}
