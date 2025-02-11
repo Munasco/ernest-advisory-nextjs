@@ -1,8 +1,8 @@
 'use client'
 
 import {Logo} from "@/components/logo";
-import React from "react";
 import {Button} from "@/components/ui/button";
+import React from "react";
 
 function Navbar() {
     return (
@@ -24,7 +24,7 @@ function Navbar() {
                 <svg
                     onClick={() => document.getElementById('menu-toggle')?.click()}
                     className="w-6 h-6 cursor-pointer text-foreground/80 hover:text-primary transition-colors block peer-checked:hidden
-                    md:hidden duration-300 ease-in-out"
+                    md:hidden"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -36,8 +36,7 @@ function Navbar() {
                 {/* Close Icon */}
                 <svg
                     onClick={() => document.getElementById('menu-toggle')?.click()}
-                    className="w-6 h-6 cursor-pointer text-foreground/80 hover:text-primary transition-all hidden peer-checked:block
-                    md:hidden duration-300 ease-in-out visible peer-checked:visible"
+                    className="w-6 h-6 cursor-pointer text-foreground/80 hover:text-primary transition-colors hidden peer-checked:block"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -49,23 +48,16 @@ function Navbar() {
                 {/* Desktop Navigation */}
                 <nav className="hidden md:block">
                     <ul className="flex space-x-6">
-                        <li><Button type="button" variant="link"
-                                    onClick={() => document.getElementById("services")?.scrollIntoView({behavior: "smooth"})}
-                                    className="text-foreground/80 hover:text-primary transition-colors">
-                            Services</Button>
+                        <li><a href="#services"
+                               className="text-foreground/80 hover:text-primary transition-colors">Services</a></li>
+                        <li><a href="#about"
+                               className="text-foreground/80 hover:text-primary transition-colors">About</a>
                         </li>
-                        <li><Button type="button" variant="link"
-                                    onClick={() => document.getElementById("about")?.scrollIntoView({behavior: "smooth"})}
-                                    className="text-foreground/80 hover:text-primary transition-colors">About</Button>
+                        <li><a href="#newsletter"
+                               className="text-foreground/80 hover:text-primary transition-colors">Newsletter</a>
                         </li>
-                        <li><Button type="button" variant="link"
-                                    onClick={() => document.getElementById("newsletter")?.scrollIntoView({behavior: "smooth"})}
-                                    className="text-foreground/80 hover:text-primary transition-colors">Newsletter</Button>
-                        </li>
-                        <li><Button type="button" variant="link"
-                                    onClick={() => document.getElementById("contact")?.scrollIntoView({behavior: "smooth"})}
-                                    className="text-foreground/80 hover:text-primary transition-colors">Contact</Button>
-                        </li>
+                        <li><a href="#contact"
+                               className="text-foreground/80 hover:text-primary transition-colors">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -74,20 +66,33 @@ function Navbar() {
             <nav
                 className="hidden group-has-checked:block md:hidden bg-background/90 backdrop-blur-sm border-t border-border">
                 <ul className="flex flex-col items-center space-y-4 py-4">
-                    <li><Button type="button" variant="link"
-                                onClick={() => document.getElementById("services")?.scrollIntoView({behavior: "smooth"})}
+                    <li><Button variant="link"
+                                onClick={() =>
+                                {document.getElementById("services")?.scrollIntoView({behavior: "smooth"});
+                                    document.getElementById('menu-toggle')?.click()}
+                                }
                                 className="text-foreground/80 hover:text-primary transition-colors">
                         Services</Button>
                     </li>
-                    <li><Button type="button" variant="link"
-                                onClick={() => document.getElementById("about")?.scrollIntoView({behavior: "smooth"})}
-                                className="text-foreground/80 hover:text-primary transition-colors">About</Button></li>
-                    <li><Button type="button" variant="link"
-                                onClick={() => document.getElementById("newsletter")?.scrollIntoView({behavior: "smooth"})}
+                    <li><Button variant="link"
+                                onClick={() =>
+                                {document.getElementById("about")?.scrollIntoView({behavior: "smooth"});
+                                    document.getElementById('menu-toggle')?.click()}
+                                }
+                                className="text-foreground/80 hover:text-primary transition-colors">About</Button>
+                    </li>
+                    <li><Button variant="link"
+                                onClick={() =>
+                                {document.getElementById("newsletter")?.scrollIntoView({behavior: "smooth"});
+                                    document.getElementById('menu-toggle')?.click()}
+                                }
                                 className="text-foreground/80 hover:text-primary transition-colors">Newsletter</Button>
                     </li>
-                    <li><Button type="button" variant="link"
-                                onClick={() => document.getElementById("contact")?.scrollIntoView({behavior: "smooth"})}
+                    <li><Button variant="link"
+                                onClick={() =>
+                                {document.getElementById("contact")?.scrollIntoView({behavior: "smooth"});
+                                    document.getElementById('menu-toggle')?.click()}
+                                }
                                 className="text-foreground/80 hover:text-primary transition-colors">Contact</Button>
                     </li>
                 </ul>
